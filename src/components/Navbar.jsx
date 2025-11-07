@@ -5,9 +5,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { name: 'How it works', href: '#how' },
     { name: 'Features', href: '#features' },
-    { name: 'Pricing', href: '#pricing' },
+    { name: 'Join', href: '#cta' },
   ];
 
   return (
@@ -33,9 +32,9 @@ export default function Navbar() {
             <button className="px-4 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-100">
               Sign in
             </button>
-            <button className="px-4 py-2 rounded-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 shadow">
+            <a href="#cta" className="px-4 py-2 rounded-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 shadow">
               Get started
-            </button>
+            </a>
           </div>
 
           <button className="md:hidden p-2" onClick={() => setOpen((v) => !v)} aria-label="Open Menu">
@@ -54,9 +53,9 @@ export default function Navbar() {
               <button className="flex-1 px-4 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-100">
                 Sign in
               </button>
-              <button className="flex-1 px-4 py-2 rounded-lg font-semibold text-white bg-blue-600 hover:bg-blue-700">
+              <a href="#cta" className="flex-1 px-4 py-2 rounded-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 text-center">
                 Get started
-              </button>
+              </a>
             </div>
           </div>
         )}
